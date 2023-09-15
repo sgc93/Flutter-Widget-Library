@@ -21,3 +21,17 @@ This repository serves as a curated collection of Flutter widgets, each accompan
    git clone https://github.com/sgc93/FlutterWidgetLibrary.git
    cd FlutterWidgetLibrary
    ```
+
+Explore the folders to find widgets of interest, along with associated code examples and explanations.
+Contributing.
+
+Contributions to this repository are highly encouraged. Whether you want to add new widgets, improve existing code samples, or fix issues, we appreciate your help.
+
+Acknowledgments
+
+We would like to express our gratitude to the Flutter and Dart communities for their valuable contributions and inspiration.
+
+Contact
+For questions, feedback, or inquiries, please contact .
+
+Happy coding!
