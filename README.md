@@ -14,7 +14,8 @@ This repository serves as a curated collection of Flutter widgets, each accompan
 - **Contributions:** I welcome contributions from the community! Share your own widget examples, improvements, or bug fixes.
 
 ## Getting Started
-1. Clone this repository:
+
+# Clone this repository:
 
    ```bash
    git clone https://github.com/sgc93/FlutterWidgetLibrary.git
@@ -23,6 +24,33 @@ This repository serves as a curated collection of Flutter widgets, each accompan
 
 Explore the folders to find widgets of interest, along with associated code examples and explanations.
 Contributing.
+
+## Explored Widget Lists
+
+1. ListView
+   In Flutter, the ListView widget provides several constructors that allow you to create scrollable lists of items. Here are the four main constructors of ListView along with their usage, syntax, and examples:
+   a. ListView()
+      Usage: The *ListView* constructor creates a scrollable list of items. It's suitable for relatively small lists that can fit entirely on the screen.
+      Syntax:
+      ```bash
+      ListView(
+         children: <Widget>[
+            // List items go here
+         ],
+      )
+      ```
+      example:
+   ```bash
+   ListView(
+     children: <Widget>[
+       ListTile(title: Text('Item 1')),
+       ListTile(title: Text('Item 2')),
+       ListTile(title: Text('Item 3')),
+     ],
+   )
+   ```
+
+
 
 ## Contributing
 
