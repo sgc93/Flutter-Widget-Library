@@ -50,6 +50,8 @@ Contributing.
    )
    ```
 
+   for more example: check lib/widgets/list_view.dart
+
 
 
 ## Contributing
