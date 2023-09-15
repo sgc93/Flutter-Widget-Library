@@ -18,6 +18,6 @@ This repository serves as a curated collection of Flutter widgets, each accompan
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/yourusername/FlutterWidgetLibrary.git
+   git clone https://github.com/sgc93/FlutterWidgetLibrary.git
    cd FlutterWidgetLibrary
    ```
