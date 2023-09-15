@@ -26,11 +26,11 @@ Contributing.
 
 ## Contributing
 
-Contributions to this repository are highly encouraged. Whether you want to add new widgets, improve existing code samples, or fix issues, we appreciate your help.
+Contributions to this repository are highly encouraged. Whether you want to add new widgets, improve existing code samples, or fix issues, I appreciate your help.
 
 ## Acknowledgments
 
-We would like to express our gratitude to the Flutter and Dart communities for their valuable contributions and inspiration.
+I would like to express My gratitude to the Flutter and Dart communities for their valuable contributions and inspiration.
 
 # Contact
 For questions, feedback, or inquiries, please contact smachewgedefaw@gmail.com.
