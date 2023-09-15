@@ -14,7 +14,7 @@ class _ImgListState extends State<ImgList> {
       Image.asset('assets/images/img1.png'),
       Image.asset('assets/images/img2.png'),
       Image.asset('assets/images/img3.jpeg'),
-      Image.asset('assets/images/img4.png'),
+      Image.asset('assets/images/img4.jpeg'),
       Image.asset('assets/images/img5.jpeg'),
       Image.asset('assets/images/img6.jpeg'),
     ];
