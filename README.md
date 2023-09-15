@@ -74,7 +74,7 @@ Contributing.
 
    ```
 
-   for more example: check [ListView](https://github.com/sgc93/FlutterWidgetLibrary.git/lib/widgets/img_list_builder.dart)
+   for more example: check [ListView.builder](https://github.com/sgc93/Flutter-Widget-Library/blob/main/lib/widgets/img_list_builder.dart)
 
 
 ## Contributing
