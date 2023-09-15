@@ -51,6 +51,30 @@ Contributing.
    ```
 
    for more example: check [ListView](https://github.com/sgc93/FlutterWidgetLibrary.git/lib/widgets/list_view.dart)
+   
+   b. _ListView.builder()_ <br>
+      Usage: The *ListView.builder()* constructor is ideal for creating large or dynamically generated lists. It creates items on-demand as the user scrolls, which is memory-efficient. <br>
+      Syntax:
+      ```bash
+      ListView.builder(
+        itemCount: <itemCount>,
+        itemBuilder: (BuildContext context, int index) {
+          // Return a widget based on the index
+        },
+      )
+      ```
+      example:
+   ```bash
+   ListView.builder(
+     itemCount: 100, // Number of items in the list
+     itemBuilder: (BuildContext context, int index) {
+       return ListTile(title: Text('Item $index'));
+     },
+   )
+
+   ```
+
+   for more example: check [ListView](https://github.com/sgc93/FlutterWidgetLibrary.git/lib/widgets/img_list_builder.dart)
 
 
 ## Contributing
