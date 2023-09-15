@@ -50,7 +50,7 @@ Contributing.
    )
    ```
 
-   for more example: check [ListView](https://github.com/sgc93/FlutterWidgetLibrary.git/lib/widgets/list_view.dart)
+   for more example: check [ListView](https://github.com/sgc93/Flutter-Widget-Library/blob/main/lib/widgets/list_view.dart)
    
    b. _ListView.builder()_ <br>
       Usage: The *ListView.builder()* constructor is ideal for creating large or dynamically generated lists. It creates items on-demand as the user scrolls, which is memory-efficient. <br>
@@ -75,6 +75,35 @@ Contributing.
    ```
 
    for more example: check [ListView.builder](https://github.com/sgc93/Flutter-Widget-Library/blob/main/lib/widgets/img_list_builder.dart)
+
+   c. _ListView.separated()_ <br>
+      Usage: The *ListView.builder()* constructor is similar to *ListView.builder()* but includes a separator between items. It's often used for lists with distinct sections. <br>
+      Syntax:
+      ```bash
+      ListView.separated(
+         itemCount: <itemCount>,
+         separatorBuilder: (BuildContext context, int index) {
+            // Return the separator widget
+        },
+        itemBuilder: (BuildContext context, int index) {
+          // Return a widget based on the index
+        },
+      )
+      ```
+      example:
+   ```bash
+   ListView.separated(
+      itemCount: 10, // Number of items in the list
+      separatorBuilder: (BuildContext context, int index) {
+         return Divider(); // Separator between items
+     },
+     itemBuilder: (BuildContext context, int index) {
+       return ListTile(title: Text('Item $index'));
+     },
+   )
+   ```
+
+   for more example: check [ListView.builder](https://github.com/sgc93/Flutter-Widget-Library/blob/main/lib/widgets/list_view_separated.dart)
 
 
 ## Contributing
