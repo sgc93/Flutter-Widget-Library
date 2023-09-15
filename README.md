@@ -50,8 +50,7 @@ Contributing.
    )
    ```
 
-   for more example: check [https://github.com/sgc93/FlutterWidgetLibrary.git/lib/widgets/list_view.dart
-](ListView)
+   for more example: check [ListView](https://github.com/sgc93/FlutterWidgetLibrary.git/lib/widgets/list_view.dart)
 
 
 ## Contributing
