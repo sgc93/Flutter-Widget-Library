@@ -27,10 +27,10 @@ Contributing.
 
 ## Explored Widget Lists
 
-1. ListView
-   In Flutter, the ListView widget provides several constructors that allow you to create scrollable lists of items. Here are the four main constructors of ListView along with their usage, syntax, and examples:
-   a. ListView()
-      Usage: The *ListView* constructor creates a scrollable list of items. It's suitable for relatively small lists that can fit entirely on the screen.
+1. **ListView** <br>
+   In Flutter, the ListView widget provides several constructors that allow you to create scrollable lists of items. Here are the four main constructors of ListView along with their usage, syntax, and examples: <br>
+   a. _ListView()_ <br>
+      Usage: The *ListView* constructor creates a scrollable list of items. It's suitable for relatively small lists that can fit entirely on the screen. <br>
       Syntax:
       ```bash
       ListView(
