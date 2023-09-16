@@ -28,7 +28,7 @@ class _FutureBuilderWidgetState extends State<FutureBuilderWidget> {
   Widget build(BuildContext context){
     return Scaffold(
       appBar: AppBar(
-        title: const Text('GridView.builder'),
+        title: const Text('FutureBuilder'),
       ),
       body: _showImage(),
     );
