@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:learn_widgets/widgets/future_builder.dart';
+import 'package:learn_widgets/widgets/animated.dart';
 
 void main(){
   runApp(const MyApp());
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
       ),
-      home: const FutureBuilderWidget(),
+      home: const AnimatedWidgets(),
     );
   }
 }
