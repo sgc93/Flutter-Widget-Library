@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learn_widgets/widgets/animation_controller.dart';
 import 'package:learn_widgets/widgets/tween_animation.dart';
 
 void main(){
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
       ),
-      home: const TweenAnimation(),
+      home: const AnimeController(),
     );
   }
 }
