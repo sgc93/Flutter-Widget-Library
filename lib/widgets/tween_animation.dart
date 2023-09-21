@@ -8,6 +8,7 @@ class TweenAnimation extends StatefulWidget {
 }
 
 class _TweenAnimationState extends State<TweenAnimation> {
+  final Tween<double> _tween = Tween<double>(begin: 0.0, end: 1.0);
   
   @override
   Widget build(BuildContext context) {
@@ -21,8 +22,19 @@ class _TweenAnimationState extends State<TweenAnimation> {
   }
 
   Widget _pageBackground(){
-    return Container(
-      color: const Color.fromRGBO(31, 31, 31, 1.0),
+    return TweenAnimationBuilder(
+      tween: _tween,
+      duration: const Duration(seconds: 1),
+      curve: Curves.bounceInOut,
+      builder: (_context, double _scale, _child){
+        return Transform.scale(
+          scale: _scale,
+          child: _child,
+        );
+      },
+      child: Container(
+        color: const Color.fromRGBO(31, 31, 31, 1.0),
+      ),
     );
   }
 }
