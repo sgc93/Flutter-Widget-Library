@@ -8,13 +8,14 @@ class AnimatedWidgets extends StatefulWidget {
 }
 
 class _AnimatedWidgetsState extends State<AnimatedWidgets> {
-  double _buttonWidth = 100;
+  double _initialWidth = 100;
+  bool _isAnimationEnabled = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Animated Widget'),
-        backgroundColor: Color.fromRGBO(44, 44, 44, 1.0),
+        backgroundColor: const Color.fromRGBO(44, 44, 44, 1.0),
       ),
       body: Container(
         child: Stack(
@@ -22,8 +23,8 @@ class _AnimatedWidgetsState extends State<AnimatedWidgets> {
           children: [
             _pageBackground(),
             Align(
-              child: _animatedButton(),
               alignment: Alignment.bottomCenter,
+              child:  _animatedButton(),
             ),
           ],
         ),
@@ -39,20 +40,21 @@ class _AnimatedWidgetsState extends State<AnimatedWidgets> {
 
   Widget _animatedButton(){
     return GestureDetector(
-        onTap: () {
+        onDoubleTap: () {
           setState(() {
-            _buttonWidth += _buttonWidth == 100 ? 100 : -100;
+            _isAnimationEnabled = !_isAnimationEnabled;
+            _initialWidth = _isAnimationEnabled ? (2*_initialWidth) : _initialWidth;
           });
         },
         child: AnimatedContainer(
           margin: const EdgeInsets.all(20),
           duration:const Duration(seconds: 3),
           curve: Curves.bounceInOut,
-          height: _buttonWidth,
-          width: _buttonWidth,
+          height: _initialWidth,
+          width: _initialWidth,
           decoration: BoxDecoration(
             color: const Color.fromRGBO(53,53, 53, 1.0),
-            borderRadius: BorderRadius.circular(_buttonWidth),
+            borderRadius: BorderRadius.circular(_initialWidth),
           ),
           child: const Center(
             child: Text(
