@@ -8,7 +8,7 @@ This repository serves as a curated collection of Flutter widgets, each accompan
 
 ## Contents
 
-- **Widgets Showcase:** Browse through our collection of Flutter widgets, each showcased with real-world use cases and code samples.
+- **Widgets Showcase:** Browse through collection of Flutter widgets, each showcased with real-world use cases and code samples.
 - **Code Examples:** Access easy-to-follow code examples that demonstrate how to use each widget effectively.
 - **Widget Explanations:** Gain a deeper understanding of Flutter widgets through comprehensive explanations and usage guidelines.
 - **Contributions:** I welcome contributions from the community! Share your own widget examples, improvements, or bug fixes.
@@ -17,10 +17,10 @@ This repository serves as a curated collection of Flutter widgets, each accompan
 
 # Clone this repository:
 
-   ```bash
-   git clone https://github.com/sgc93/FlutterWidgetLibrary.git
-   cd FlutterWidgetLibrary
-   ```
+```bash
+git clone https://github.com/sgc93/FlutterWidgetLibrary.git
+cd FlutterWidgetLibrary
+```
 
 Explore the folders to find widgets of interest, along with associated code examples and explanations.
 Contributing.
@@ -28,83 +28,57 @@ Contributing.
 ## Explored Widget Lists
 
 1. **ListView** <br>
-   In Flutter, the ListView widget provides several constructors that allow you to create scrollable lists of items. Here are the four main constructors of ListView along with their usage, syntax, and examples: [See on flutter doc](https://api.flutter.dev/flutter/widgets/ListView-class.html)<br>
+   [See on flutter doc](https://api.flutter.dev/flutter/widgets/ListView-class.html)<br>
    a. _ListView()_ <br>
-      Usage: The *ListView* constructor creates a scrollable list of items. It's suitable for relatively small lists that can fit entirely on the screen. <br>
-      Syntax:
-      ```bash
-      ListView(
-         children: <Widget>[
-            // List items go here
-         ],
-      )
-      ```
-      example:
-   ```bash
-   ListView(
-     children: <Widget>[
-       ListTile(title: Text('Item 1')),
-       ListTile(title: Text('Item 2')),
-       ListTile(title: Text('Item 3')),
-     ],
-   )
-   ```
+   Syntax:
+   `bash
+ListView(
+   children: <Widget>[
+      // List items go here
+   ],
+)
+`
 
-   for more example: check [ListView](https://github.com/sgc93/Flutter-Widget-Library/blob/main/lib/widgets/list_view.dart)
-   
+   for more example: check [ListView](https://github.com/sgc93/Flutter-Widget-Library/blob/main/lib/widgets/listView/list_view.dart)
+
    b. _ListView.builder()_ <br>
-      Usage: The *ListView.builder()* constructor is ideal for creating large or dynamically generated lists. It creates items on-demand as the user scrolls, which is memory-efficient. <br>
-      Syntax:
-      ```bash
-      ListView.builder(
-        itemCount: <itemCount>,
-        itemBuilder: (BuildContext context, int index) {
-          // Return a widget based on the index
-        },
-      )
-      ```
-      example:
-   ```bash
-   ListView.builder(
-     itemCount: 100, // Number of items in the list
-     itemBuilder: (BuildContext context, int index) {
-       return ListTile(title: Text('Item $index'));
-     },
-   )
-
-   ```
-
-   for more example: check [ListView.builder](https://github.com/sgc93/Flutter-Widget-Library/blob/main/lib/widgets/img_list_builder.dart)
+   Syntax:
+   `bash
+ListView.builder(
+  itemCount: <itemCount>,
+  itemBuilder: (BuildContext context, int index) {
+    // Return a widget based on the index
+  },
+)
+`
+   for more example: check [ListView.builder](https://github.com/sgc93/Flutter-Widget-Library/blob/main/lib/widgets/listView/img_list_builder.dart)
 
    c. _ListView.separated()_ <br>
-      Usage: The *ListView.builder()* constructor is similar to *ListView.builder()* but includes a separator between items. It's often used for lists with distinct sections. <br>
-      Syntax:
-      ```bash
-      ListView.separated(
-         itemCount: <itemCount>,
-         separatorBuilder: (BuildContext context, int index) {
-            // Return the separator widget
-        },
-        itemBuilder: (BuildContext context, int index) {
-          // Return a widget based on the index
-        },
-      )
-      ```
-      example:
+   Syntax:
+
    ```bash
    ListView.separated(
-      itemCount: 10, // Number of items in the list
-      separatorBuilder: (BuildContext context, int index) {
-         return Divider(); // Separator between items
-     },
-     itemBuilder: (BuildContext context, int index) {
-       return ListTile(title: Text('Item $index'));
-     },
+    itemCount: <itemCount>,
+    separatorBuilder: (BuildContext context, int index) {
+       // Return the separator widget
+   },
+   itemBuilder: (BuildContext context, int index) {
+     // Return a widget based on the index
+   },
    )
    ```
 
-   for more example: check [ListView.builder](https://github.com/sgc93/Flutter-Widget-Library/blob/main/lib/widgets/list_view_separated.dart)
+   for more example: check [ListView.builder](https://github.com/sgc93/Flutter-Widget-Library/blob/main/lib/widgets/listView/list_view_separated.dart)
 
+2. **[GridView](https://github.com/sgc93/Flutter-Widget-Library/blob/main/lib/widgets/gridView)**
+3. **[Animation](https://github.com/sgc93/Flutter-Widget-Library/blob/main/lib/widgets/animation)**
+
+- _Explicit Animation_ :
+- _Tween Animation_ :
+- \_Animation with Controller:
+
+4. **[FutureBuilder](https://github.com/sgc93/Flutter-Widget-Library/blob/main/lib/widgets/future_builder.dart)**
+5. **[BoxShadow](https://github.com/sgc93/Flutter-Widget-Library/blob/main/lib/widgets/box_shadow.dart)**
 
 ## Contributing
 
@@ -115,6 +89,11 @@ Contributions to this repository are highly encouraged. Whether you want to add 
 I would like to express My gratitude to the Flutter and Dart communities for their valuable contributions and inspiration.
 
 # Contact
+
 For questions, feedback, or inquiries, please contact smachewgedefaw@gmail.com.
 
 Happy coding!
+
+```
+
+```
