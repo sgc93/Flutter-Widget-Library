@@ -9,26 +9,32 @@ class DrawerHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[300],
+      backgroundColor: const Color.fromRGBO(53, 58, 63, 1),
       key: scaffoldKey,
       appBar: AppBar(
-        backgroundColor: Colors.grey[300],
+        elevation: 0,
+        backgroundColor: const Color.fromRGBO(53, 58, 63, 1),
         leading: IconButton(
           onPressed: () {
             scaffoldKey.currentState!.openDrawer();
           },
           icon: const Icon(
-            Icons.arrow_right,
-            color: Colors.blue,
+            Icons.account_circle,
             size: 30,
           ),
         ),
-        title: const Text(
-          'DrawerWidget',
-          style: TextStyle(
-            color: Colors.blue,
+        title: const Text('DrawerWidget'),
+        actions: [
+          IconButton(
+            onPressed: () {
+              scaffoldKey.currentState!.openEndDrawer();
+            },
+            icon: const Icon(
+              Icons.settings,
+              size: 30,
+            ),
           ),
-        ),
+        ],
       ),
       drawer: const MyDrawer(),
       endDrawer: const MyEndDrawer(),
