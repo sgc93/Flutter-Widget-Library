@@ -1,7 +1,7 @@
 # FlutterWidgetLibrary
 
 Welcome to the **FlutterWidgetLibrary**, a resource for exploring and mastering Flutter widgets with code examples and explanations.
-   This repository serves as a curated collection of Flutter widgets, each accompanied by detailed code examples and explanations. Whether you're a Flutter enthusiast looking to deepen your widget knowledge or a developer seeking practical solutions for your projects, you'll find a wealth of valuable insights and code samples here.
+This repository serves as a curated collection of Flutter widgets, each accompanied by detailed code examples and explanations. Whether you're a Flutter enthusiast looking to deepen your widget knowledge or a developer seeking practical solutions for your projects, you'll find a wealth of valuable insights and code samples here.
 
 ## Contents
 
@@ -16,6 +16,7 @@ Welcome to the **FlutterWidgetLibrary**, a resource for exploring and mastering 
    [See on flutter doc](https://api.flutter.dev/flutter/widgets/ListView-class.html)<br>
    a. _ListView()_ <br>
    Syntax:
+
    ```bash
    ListView(
       children: <Widget>[
@@ -28,6 +29,7 @@ Welcome to the **FlutterWidgetLibrary**, a resource for exploring and mastering 
 
    b. _ListView.builder()_ <br>
    Syntax:
+
    ```bash
    ListView.builder(
      itemCount: <itemCount>,
@@ -36,10 +38,12 @@ Welcome to the **FlutterWidgetLibrary**, a resource for exploring and mastering 
      },
    )
    ```
+
    for more example: check [ListView.builder](https://github.com/sgc93/Flutter-Widget-Library/blob/main/lib/widgets/listView/img_list_builder.dart)
 
    c. _ListView.separated()_ <br>
    Syntax:
+
    ```bash
    ListView.separated(
     itemCount: <itemCount>,
@@ -54,15 +58,19 @@ Welcome to the **FlutterWidgetLibrary**, a resource for exploring and mastering 
 
    for more example: check [ListView.builder](https://github.com/sgc93/Flutter-Widget-Library/blob/main/lib/widgets/listView/list_view_separated.dart)
 
-3. **[GridView](https://github.com/sgc93/Flutter-Widget-Library/blob/main/lib/widgets/gridView)**
-4. **[Animation](https://github.com/sgc93/Flutter-Widget-Library/blob/main/lib/widgets/animation)**
+2. **[GridView](https://github.com/sgc93/Flutter-Widget-Library/blob/main/lib/widgets/gridView)**
+3. **[Animation](https://github.com/sgc93/Flutter-Widget-Library/blob/main/lib/widgets/animation)**
 
-- _Explicit Animation_ 
-- _Tween Animation_ 
-- _Animation with Controller
+- _Explicit Animation_
+- _Tween Animation_
+- \_Animation with Controller
 
 4. **[FutureBuilder](https://github.com/sgc93/Flutter-Widget-Library/blob/main/lib/widgets/future_builder.dart)**
 5. **[BoxShadow](https://github.com/sgc93/Flutter-Widget-Library/blob/main/lib/widgets/box_shadow.dart)**
+6. **[Drawer and endDrawer](https://github.com/sgc93/Flutter-Widget-Library/blob/main/lib/widgets/drawer)**
+
+- _Drawer_
+- _endDrawer_
 
 ## Contributing
 
