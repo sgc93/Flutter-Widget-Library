@@ -11,9 +11,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'learn flutter widgets',
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
+        textTheme: const TextTheme(
+          bodyLarge: TextStyle(color: Colors.white),
+          bodyMedium: TextStyle(color: Color.fromARGB(151, 210, 192, 192)),
+          bodySmall: TextStyle(color: Color.fromARGB(144, 255, 255, 255)),
+        ),
       ),
       home: DrawerHome(),
     );
