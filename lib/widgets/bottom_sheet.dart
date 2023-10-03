@@ -29,6 +29,12 @@ class BottomSheetW extends StatelessWidget {
 
   void _showBottomSheet(BuildContext context) {
     showModalBottomSheet(
+      backgroundColor: Colors.black54,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(
+          top: Radius.circular(20),
+        ),
+      ),
       context: context,
       builder: (context) {
         return Container(
