@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:learn_widgets/widgets/drawer/home.dart';
+import 'package:learn_widgets/widgets/bottom_sheet.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
           bodySmall: TextStyle(color: Color.fromARGB(144, 255, 255, 255)),
         ),
       ),
-      home: DrawerHome(),
+      home: BottomSheetW(),
     );
   }
 }
