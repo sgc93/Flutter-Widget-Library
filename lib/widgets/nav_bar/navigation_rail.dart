@@ -18,6 +18,9 @@ class _NavBarState extends State<NavBar> {
         backgroundColor: Colors.deepPurple[600],
       ),
       bottomNavigationBar: NavigationBar(
+        backgroundColor: Colors.deepPurple[600],
+        indicatorColor: Colors.black26,
+        animationDuration: const Duration(seconds: 2),
         destinations: _navigationDestionations(),
       ),
     );
@@ -26,19 +29,31 @@ class _NavBarState extends State<NavBar> {
   List<NavigationDestination> _navigationDestionations() {
     return [
       const NavigationDestination(
-        icon: Icon(Icons.home),
+        icon: Icon(
+          Icons.home,
+          color: Colors.white,
+        ),
         label: 'HOME',
       ),
       const NavigationDestination(
-        icon: Icon(Icons.add),
+        icon: Icon(
+          Icons.add,
+          color: Colors.white,
+        ),
         label: 'ADD',
       ),
       const NavigationDestination(
-        icon: Icon(Icons.settings),
+        icon: Icon(
+          Icons.settings,
+          color: Colors.white,
+        ),
         label: 'SETTINGS',
       ),
       const NavigationDestination(
-        icon: Icon(Icons.person),
+        icon: Icon(
+          Icons.person,
+          color: Colors.white,
+        ),
         label: 'ACCOUNT',
       ),
     ];
