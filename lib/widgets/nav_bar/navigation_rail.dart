@@ -18,9 +18,14 @@ class _NavRailState extends State<NavRail> {
         title: const Text('#NavigationRail'),
         elevation: 0,
       ),
-      bottomNavigationBar: NavigationRail(
-          destinations: _navigationRailDestionations(),
-          selectedIndex: _selectedIndex),
+      body: Row(
+        children: [
+          NavigationRail(
+            destinations: _navigationRailDestionations(),
+            selectedIndex: _selectedIndex,
+          ),
+        ],
+      ),
     );
   }
 
