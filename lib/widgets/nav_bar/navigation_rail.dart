@@ -20,9 +20,15 @@ class _NavRailState extends State<NavRail> {
       ),
       body: Row(
         children: [
-          NavigationRail(
-            destinations: _navigationRailDestionations(),
-            selectedIndex: _selectedIndex,
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: NavigationRail(
+              indicatorColor: Colors.white,
+              labelType: NavigationRailLabelType.selected,
+              backgroundColor: Colors.black54,
+              destinations: _navigationRailDestionations(),
+              selectedIndex: _selectedIndex,
+            ),
           ),
         ],
       ),
@@ -36,28 +42,48 @@ class _NavRailState extends State<NavRail> {
           Icons.home,
           color: Colors.white,
         ),
-        label: Text('HOME'),
+        label: Text(
+          'HOME',
+          style: TextStyle(
+            color: Colors.amber,
+          ),
+        ),
       ),
       const NavigationRailDestination(
         icon: Icon(
           Icons.add,
           color: Colors.white,
         ),
-        label: Text('ADD'),
+        label: Text(
+          'ADD',
+          style: TextStyle(
+            color: Colors.amber,
+          ),
+        ),
       ),
       const NavigationRailDestination(
         icon: Icon(
           Icons.settings,
           color: Colors.white,
         ),
-        label: Text('SETTINGS'),
+        label: Text(
+          'SETTINGS',
+          style: TextStyle(
+            color: Colors.amber,
+          ),
+        ),
       ),
       const NavigationRailDestination(
         icon: Icon(
           Icons.person,
           color: Colors.white,
         ),
-        label: Text('ACCOUNT'),
+        label: Text(
+          'ACCOUNT',
+          style: TextStyle(
+            color: Colors.amber,
+          ),
+        ),
       ),
     ];
   }
