@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:learn_widgets/widgets/bottom_sheet.dart';
 import 'package:learn_widgets/widgets/nav_bar/navigation_rail.dart';
 
 void main() {
@@ -22,7 +21,7 @@ class MyApp extends StatelessWidget {
           bodySmall: TextStyle(color: Color.fromARGB(144, 255, 255, 255)),
         ),
       ),
-      home: const NavBar(),
+      home: const NavRail(),
     );
   }
 }
