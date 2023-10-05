@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 
 class MyTimer extends StatefulWidget {
@@ -8,7 +10,7 @@ class MyTimer extends StatefulWidget {
 }
 
 class _MyTimerState extends State<MyTimer> {
-  int _remainSec = 0;
+  int _seconds = 0;
   bool _isTimerStarted = false;
   @override
   Widget build(BuildContext context) {
@@ -29,9 +31,21 @@ class _MyTimerState extends State<MyTimer> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            _timer(),
+            _countingBox(),
             GestureDetector(
-              onTap: () {},
+              onTap: () {
+                if (_isTimerStarted) {
+                  _timer();
+                  setState(() {
+                    _isTimerStarted = false;
+                  });
+                } else {
+                  _timer();
+                  setState(() {
+                    _isTimerStarted = true;
+                  });
+                }
+              },
               child: Container(
                 padding: const EdgeInsets.all(10),
                 decoration: BoxDecoration(
@@ -54,7 +68,7 @@ class _MyTimerState extends State<MyTimer> {
     );
   }
 
-  _timer() {
+  _countingBox() {
     return Container(
       width: 300,
       padding: const EdgeInsets.all(10),
@@ -63,7 +77,7 @@ class _MyTimerState extends State<MyTimer> {
         color: Colors.blue[200],
       ),
       child: Text(
-        _remainSec.toString(),
+        _seconds.toString(),
         textAlign: TextAlign.center,
         style: const TextStyle(
           color: Colors.white,
@@ -72,5 +86,17 @@ class _MyTimerState extends State<MyTimer> {
         ),
       ),
     );
+  }
+
+  _timer() {
+    Timer.periodic(const Duration(seconds: 1), (timer) {
+      if (_isTimerStarted) {
+        timer.cancel();
+      } else {
+        setState(() {
+          _seconds++;
+        });
+      }
+    });
   }
 }
