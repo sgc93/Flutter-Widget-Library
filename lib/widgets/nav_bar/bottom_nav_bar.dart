@@ -28,6 +28,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
         currentIndex: _currentIndex,
         items: _navDestination(),
       ),
+      body: _getPages()[_currentIndex],
     );
   }
 
@@ -37,6 +38,29 @@ class _BottomNavBarState extends State<BottomNavBar> {
       const BottomNavigationBarItem(
           icon: Icon(Icons.business), label: 'BUSSINES'),
       const BottomNavigationBarItem(icon: Icon(Icons.school), label: 'SCHOOL'),
+    ];
+  }
+
+  List<Widget> _getPages() {
+    return [
+      Center(
+        child: Text(
+          'HOME',
+          style: TextStyle(color: Colors.amber[900]),
+        ),
+      ),
+      Center(
+        child: Text(
+          'BUSSINES',
+          style: TextStyle(color: Colors.amber[900]),
+        ),
+      ),
+      Center(
+        child: Text(
+          'SCHOOL',
+          style: TextStyle(color: Colors.amber[900]),
+        ),
+      ),
     ];
   }
 }
