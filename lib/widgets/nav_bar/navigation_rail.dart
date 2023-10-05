@@ -1,101 +1,22 @@
 import 'package:flutter/material.dart';
 
-class NavBar extends StatefulWidget {
-  const NavBar({super.key});
+class NavRail extends StatefulWidget {
+  const NavRail({super.key});
 
   @override
-  State<NavBar> createState() => _NavBarState();
+  State<NavRail> createState() => _NavRailState();
 }
 
-class _NavBarState extends State<NavBar> {
-  int _currentIndex = 0;
+class _NavRailState extends State<NavRail> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.deepPurple[300],
+      backgroundColor: Colors.blue[300],
       appBar: AppBar(
-        title: const Text('#NavigationBar'),
-        backgroundColor: Colors.deepPurple[600],
+        backgroundColor: Colors.blue[600],
+        title: const Text('#NavigationRail'),
+        elevation: 0,
       ),
-      bottomNavigationBar: NavigationBar(
-        onDestinationSelected: (int index) {
-          setState(() {
-            _currentIndex = index;
-          });
-        },
-        backgroundColor: Colors.deepPurple[600],
-        indicatorColor: Colors.black26,
-        animationDuration: const Duration(seconds: 2),
-        destinations: _navigationDestionations(),
-        selectedIndex: _currentIndex,
-      ),
-      body: _primaryPages()[_currentIndex],
     );
-  }
-
-  List<NavigationDestination> _navigationDestionations() {
-    return [
-      const NavigationDestination(
-        icon: Icon(
-          Icons.home,
-          color: Colors.white,
-        ),
-        label: 'HOME',
-      ),
-      const NavigationDestination(
-        icon: Icon(
-          Icons.add,
-          color: Colors.white,
-        ),
-        label: 'ADD',
-      ),
-      const NavigationDestination(
-        icon: Icon(
-          Icons.settings,
-          color: Colors.white,
-        ),
-        label: 'SETTINGS',
-      ),
-      const NavigationDestination(
-        icon: Icon(
-          Icons.person,
-          color: Colors.white,
-        ),
-        label: 'ACCOUNT',
-      ),
-    ];
-  }
-
-  List<Widget> _primaryPages() {
-    return [
-      const Center(
-        child: Icon(
-          Icons.home,
-          size: 100,
-          color: Colors.white,
-        ),
-      ),
-      const Center(
-        child: Icon(
-          Icons.add,
-          size: 100,
-          color: Colors.white,
-        ),
-      ),
-      const Center(
-        child: Icon(
-          Icons.settings,
-          size: 100,
-          color: Colors.white,
-        ),
-      ),
-      const Center(
-        child: Icon(
-          Icons.person,
-          size: 100,
-          color: Colors.white,
-        ),
-      ),
-    ];
   }
 }
