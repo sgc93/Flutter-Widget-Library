@@ -18,6 +18,11 @@ class _NavBarState extends State<NavBar> {
         backgroundColor: Colors.deepPurple[600],
       ),
       bottomNavigationBar: NavigationBar(
+        onDestinationSelected: (int index) {
+          setState(() {
+            _currentIndex = index;
+          });
+        },
         backgroundColor: Colors.deepPurple[600],
         indicatorColor: Colors.black26,
         animationDuration: const Duration(seconds: 2),
