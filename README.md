@@ -74,6 +74,12 @@ This repository serves as a curated collection of Flutter widgets, each accompan
 
 6. **[ModalBottomSheet](https://github.com/sgc93/Flutter-Widget-Library/blob/main/lib/widgets/bottom_sheet.dart)**
 
+7. **[Navigation Bars](https://github.com/sgc93/Flutter-Widget-Library/blob/main/lib/widgets/nav_bar)**
+
+- _BottomNavigationBar_
+- _NavigationBar_
+- _NavigationRail_
+
 ## Contributing
 
 Contributions to this repository are highly encouraged. Whether you want to add new widgets, improve existing code samples, or fix issues, I appreciate your help.
