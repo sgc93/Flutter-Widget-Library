@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:learn_widgets/widgets/nav_bar/navigation_rail.dart';
+import 'package:learn_widgets/widgets/nav_bar/bottom_nav_bar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
           bodySmall: TextStyle(color: Color.fromARGB(144, 255, 255, 255)),
         ),
       ),
-      home: const NavRail(),
+      home: const BottomNavBar(),
     );
   }
 }
