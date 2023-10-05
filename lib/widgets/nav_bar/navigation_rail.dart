@@ -17,6 +17,30 @@ class _NavBarState extends State<NavBar> {
         title: const Text('#NavigationBar'),
         backgroundColor: Colors.deepPurple[600],
       ),
+      bottomNavigationBar: NavigationBar(
+        destinations: _navigationDestionations(),
+      ),
     );
+  }
+
+  List<NavigationDestination> _navigationDestionations() {
+    return [
+      const NavigationDestination(
+        icon: Icon(Icons.home),
+        label: 'HOME',
+      ),
+      const NavigationDestination(
+        icon: Icon(Icons.add),
+        label: 'ADD',
+      ),
+      const NavigationDestination(
+        icon: Icon(Icons.settings),
+        label: 'SETTINGS',
+      ),
+      const NavigationDestination(
+        icon: Icon(Icons.person),
+        label: 'ACCOUNT',
+      ),
+    ];
   }
 }
