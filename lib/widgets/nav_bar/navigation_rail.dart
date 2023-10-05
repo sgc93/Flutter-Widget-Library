@@ -35,6 +35,7 @@ class _NavRailState extends State<NavRail> {
               selectedIndex: _selectedIndex,
             ),
           ),
+          _primaryPages()[_selectedIndex],
         ],
       ),
     );
@@ -88,6 +89,39 @@ class _NavRailState extends State<NavRail> {
           style: TextStyle(
             color: Colors.amber,
           ),
+        ),
+      ),
+    ];
+  }
+
+  List<Widget> _primaryPages() {
+    return [
+      const Center(
+        child: Icon(
+          Icons.home,
+          size: 100,
+          color: Colors.white,
+        ),
+      ),
+      const Center(
+        child: Icon(
+          Icons.add,
+          size: 100,
+          color: Colors.white,
+        ),
+      ),
+      const Center(
+        child: Icon(
+          Icons.settings,
+          size: 100,
+          color: Colors.white,
+        ),
+      ),
+      const Center(
+        child: Icon(
+          Icons.person,
+          size: 100,
+          color: Colors.white,
         ),
       ),
     ];
