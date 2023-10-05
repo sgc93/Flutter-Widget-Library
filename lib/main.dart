@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:learn_widgets/widgets/nav_bar/bottom_nav_bar.dart';
+import 'package:learn_widgets/widgets/timer.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
           bodySmall: TextStyle(color: Color.fromARGB(144, 255, 255, 255)),
         ),
       ),
-      home: const BottomNavBar(),
+      home: const MyTimer(),
     );
   }
 }
