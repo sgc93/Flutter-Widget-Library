@@ -22,7 +22,9 @@ class _NavBarState extends State<NavBar> {
         indicatorColor: Colors.black26,
         animationDuration: const Duration(seconds: 2),
         destinations: _navigationDestionations(),
+        selectedIndex: _currentIndex,
       ),
+      body: _primaryPages()[_currentIndex],
     );
   }
 
@@ -55,6 +57,39 @@ class _NavBarState extends State<NavBar> {
           color: Colors.white,
         ),
         label: 'ACCOUNT',
+      ),
+    ];
+  }
+
+  List<Widget> _primaryPages() {
+    return [
+      const Center(
+        child: Icon(
+          Icons.home,
+          size: 100,
+          color: Colors.white,
+        ),
+      ),
+      const Center(
+        child: Icon(
+          Icons.add,
+          size: 100,
+          color: Colors.white,
+        ),
+      ),
+      const Center(
+        child: Icon(
+          Icons.settings,
+          size: 100,
+          color: Colors.white,
+        ),
+      ),
+      const Center(
+        child: Icon(
+          Icons.person,
+          size: 100,
+          color: Colors.white,
+        ),
       ),
     ];
   }
