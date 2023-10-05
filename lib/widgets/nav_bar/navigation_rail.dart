@@ -8,7 +8,7 @@ class NavRail extends StatefulWidget {
 }
 
 class _NavRailState extends State<NavRail> {
-  final int _selectedIndex = 0;
+  int _selectedIndex = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,6 +23,11 @@ class _NavRailState extends State<NavRail> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: NavigationRail(
+              onDestinationSelected: (int index) {
+                setState(() {
+                  _selectedIndex = index;
+                });
+              },
               indicatorColor: Colors.white,
               labelType: NavigationRailLabelType.selected,
               backgroundColor: Colors.black54,
