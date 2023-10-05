@@ -15,6 +15,18 @@ class _BottomNavBarState extends State<BottomNavBar> {
         backgroundColor: Colors.amber,
         title: const Text('BottomNavigationBar'),
       ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: _navDestination(),
+      ),
     );
+  }
+
+  List<BottomNavigationBarItem> _navDestination() {
+    return [
+      const BottomNavigationBarItem(icon: Icon(Icons.home), label: 'HOME'),
+      const BottomNavigationBarItem(
+          icon: Icon(Icons.business), label: 'BUSSINES'),
+      const BottomNavigationBarItem(icon: Icon(Icons.school), label: 'SCHOOL'),
+    ];
   }
 }
